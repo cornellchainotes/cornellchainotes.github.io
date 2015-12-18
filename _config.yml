@@ -14,7 +14,9 @@ description: > # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "/cornellchainotes.github.io" # the subpath of your site, e.g. /blog
 url: "http://cornellchainotes.github.io" # the base hostname & protocol for your site
-github_username:  cornellchainotes
+twitter_username: thechainotes
+youtube_username: cornellchainotes
+facebook_username: thechainotes
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
