@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Our new album, Best &amp; Only, is available right <a href="{{ page.albumurl | prepend: site.baseurl }}">here!</a></h1>
+    <img src="../img/chainotesgroup.jpg">
+  </header>
+
+  <div class="post-content">
+  	<div class="audio-section">
+  		{% include social-media.html %}
+  		<audio controls>
+  			<source src="../audio/Party-Shart.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+  		</audio>
+  	</div>
+
+    {{ content }}
+  </div>
+
+</article>

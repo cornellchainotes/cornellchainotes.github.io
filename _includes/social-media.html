@@ -1,0 +1,19 @@
+<ul class="social-media-list">
+  {% if site.twitter_username %}
+  <li>
+    {% include icon-twitter.html username=site.twitter_username %}
+  </li>
+  {% endif %}
+
+  {% if site.youtube_username %}
+  <li>
+    {% include icon-youtube.html username=site.youtube_username %}
+  </li>
+  {% endif %}
+
+  {% if site.facebook_username %}
+  <li>
+    {% include icon-facebook.html username=site.facebook_username %}
+  </li>
+  {% endif %}
+</ul>
