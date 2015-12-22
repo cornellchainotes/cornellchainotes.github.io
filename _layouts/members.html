@@ -19,7 +19,7 @@ layout: default
       <div class="row">
       {% endif %}
         <div class="col-lg-6">
-          <img src="{{ member[1] }}" alt="{{member[0]}}">
+          <img src="{{ member[1] | prepend: "/img/members/" | prepend:site.baseurl }}" alt="{{member[0]}}">
           {{ member[0] }}
           {{ member[2] }}
         </div>
