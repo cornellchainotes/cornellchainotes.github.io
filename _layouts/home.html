@@ -4,7 +4,7 @@ layout: default
 <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Our new album, Best &amp; Only, is available right <a href="{{ page.albumurl | prepend: site.baseurl }}">here!</a></h1>
+    <h1 class="post-title home">Our new album, Best &amp; Only, is available right <a href="{{ page.albumurl | prepend: site.baseurl }}">here!</a></h1>
     <img src="../img/chainotesgroup.jpg">
   </header>
 
@@ -12,12 +12,28 @@ layout: default
   	<div class="audio-section">
   		{% include social-media.html %}
   		<audio controls>
-  			<source src="../audio/Party-Shart.mp3" type="audio/mp3">
+  			<source src="../audio/Tzoeket.mp3" type="audio/mp3">
         Your browser does not support the audio tag.
   		</audio>
   	</div>
 
-    {{ content }}
+    <div class="row">
+      <div class="col-lg-4 publicity">
+        {% for publ in page.publicity-links %}
+          <img src="{{ publ | prepend: site.baseurl}}">
+        {% endfor %}
+      </div>
+      <div class="col-lg-8 home-text">
+        {{ content }}
+        <div class="row">
+          {% for im in page.group-images %}
+            <div class="col-lg-4">
+              <img src="{{ im | prepend: site.baseurl }}">
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
   </div>
 
 </article>

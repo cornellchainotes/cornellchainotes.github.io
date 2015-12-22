@@ -141,6 +141,7 @@
 .social-media-list {
     list-style: none;
     margin-left: 0;
+    display: inline-block;
 }
 
 .social-media-list > li {
@@ -245,6 +246,10 @@
     @include media-query($on-laptop) {
         font-size: 36px;
     }
+
+    &.home{
+        text-align: center;
+    }
 }
 
 .post-content {
@@ -273,4 +278,20 @@
             font-size: 18px;
         }
     }
+
+    .publicity{
+        img{
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .home-text{
+        font-size: 20px;
+    }
+}
+
+.audio-section{
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 25px;
 }
