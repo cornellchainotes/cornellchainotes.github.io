@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    {% if page.header-title %}
+    <h1 class="post-title">{{ page.header-title }}</h1>
+    {% endif %}
+    {% if page.header-img %}
+    <img src="{{ page.header-img | prepend:site.baseurl }}" alt="{{ page.header-img-alt }}">
+    {% endif %}
+  </header>
+
+  <div class="post-content">
+      <div class="row">
+      {% for n in (0..page.num-cols) %}
+        <div class="col-lg-{{page.cols[n]}}">
+          {{ page.in-cols[n] }}
+        </div>
+      {% endfor %}
+      </div>
+  </div>
+
+</article>

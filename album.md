@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: cols-page
 title: Album
 permalink: /album/
 header-img: /img/album/bestandonly-cover.png
+page-id: album
 num-sections: 1
 num-cols: 1
 [//]: # (one less than the actual number of columns)
