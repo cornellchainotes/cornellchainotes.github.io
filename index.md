@@ -2,8 +2,8 @@
 layout: home
 title: The Chai Notes
 albumurl: /album/
-publicity-links: ["img/publicity/sponsored-cornell-hillel.jpg","img/publicity/acac.jpg","img/publicity/shop.jpg"]
-group-images: ["img/group1.jpg","img/group2.jpg","img/group3.jpg"]
+publicity-links: ["/img/publicity/sponsored-cornell-hillel.jpg","/img/publicity/acac.jpg","/img/publicity/shop.jpg"]
+group-images: ["/img/group1.jpg","/img/group2.jpg","/img/group3.jpg"]
 ---
 
 Founded in 1996, The Chai Notes is Cornell University's best and only Jewish themed, co-ed a Cappella group. We sing both Hebrew and English songs, including current popular hits. Overall, as a tight-knit group, we love to sing and perform together.
